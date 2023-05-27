@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property</title>
+    <style>
+        p.inline{             /* this will only take its effect in p tag with class inline*/
+            display: inline;  
+        }
+        span{
+            display: block;
+        }
+        /* .in-block{
+            display: ;
+            width: 800px;
+            height: 100px;
+            color: red;
+        } */
+        p.in-block{
+            display: none;
+            /* width: 800px;
+            height: 100px; */
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Making p tag -Inline  -->
+    <!-- p tag default behaviour block level -->
+    <p class="inline">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, ipsa.</p>
+    <p class="inline">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa facilis impedit aliquam fuga, quidem doloremque quasi beatae esse ea dolorem, totam mollitia quae corporis qui earum, alias autem cumque.</p>
+
+    <hr>
+
+    <!-- Making span tag block level -->
+    <!-- as default behaviour of span is inline -->
+    <span>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, corporis.
+    </span>
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+    <hr>
+
+    <!-- Inline Block -->
+    <p class="in-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, laborum?</p>
+    <p class="in-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, laborum?</p>
+</body>
+</html>

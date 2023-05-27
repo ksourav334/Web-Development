@@ -1,0 +1,71 @@
+/* Universal Selector */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Elementor Selector */
+h1{
+    color: blue;
+}
+p{
+    color: goldenrod;
+}
+
+/* Class Selectors */
+
+.para{
+    color: #ff00c8;
+}
+.hello{
+    font-size: 30px;
+}
+
+/* ID Selector */
+#id1{
+    color: white;
+    background-color: red;
+}
+
+/* Selector List (Class Selector/Element Selector with multiple list)*/
+
+.class1,.class2,.class3{
+
+    background-color: yellow;
+    color: blue;
+    font-size: 25px;
+}
+
+/* Descendent Selectors ie. every tag inside main can take the effect */
+
+main p{
+    color: red; 
+}
+
+/* Child Selector Note :- All descendent selector can't be a child selector but all child selector can be a descendent selector*/
+
+h1>p{
+    color: crimson;
+}
+
+
+/* isko kam krne ke liye general wala ko comment karna jaruri h */
+/* Adjacent sibling selector -this is will simply take into action the p tag which is after section portion */
+
+section + p{
+    color: red;
+}
+
+
+/* isko kam krne ke liye adjacent wala ko comment nhi karenge to phirbhi chalega qki ye adjacent ko override kr deta h */
+/* General Sibling Selector - The CSS general sibling selector is used to select all elements that follow the first element such that all are children of the same parent. mtlb simply sara p after */
+
+section~p{
+    color: blue;
+}
+
+/* Attribute Selector */
+
+[target="_blank"]{
+           
+    color: palevioletred;
+}

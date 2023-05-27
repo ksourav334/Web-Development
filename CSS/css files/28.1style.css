@@ -1,0 +1,45 @@
+@media(max-width: 600px){
+    body{
+        background-color: red;
+    }
+    div::after{
+        content: 'Mobile'
+    }
+}
+div{
+    text-align: center;
+    font-size: x-large;
+}
+@media(min-width: 600px){
+    body{
+        background-color: aquamarine;
+
+    }
+    div::after{
+        content: 'Tablets'
+    }
+}
+@media(min-width:768px){
+    body{
+        background-color: yellow;
+    }
+    div::after{
+        content: 'Landscape Tablets'
+    }
+}
+@media(min-width:992px){
+    body{
+        background-color: green;
+    }
+    div::after{
+        content: 'Laptop'
+    }
+}
+@media(min-width: 1200px){
+    body{
+        background-color: brown;
+    }
+    div::after{
+        content:'Larger Laptop'
+    }
+}

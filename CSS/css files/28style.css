@@ -1,0 +1,20 @@
+body{
+    background-color: red;
+
+}
+div{
+    font-size: x-large;
+    text-align: center;
+}
+div::after{
+    content: "Welcome to the Demo";
+}
+@media(min-width: 900px){
+    /* If viewport is atleast 900 px then this css will apply */
+    body{
+        background-color: aqua;
+        
+        }
+    div::after{
+            content: 'Wow its working'    
+    }

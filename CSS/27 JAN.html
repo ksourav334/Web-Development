@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes | Pseudo Elements</title>
+    <style>
+        .hover:hover{
+            background-color: black;
+            color: white;
+        }
+        input:focus{
+            color: red;
+            background-color: greenyellow;
+            font-size: 25px;
+        }
+        a:hover{
+            color: red;
+            background-color: aqua;
+        }
+        a:active{
+            color: chartreuse;
+        }
+        /* a:visited{
+            color: darkorange;
+        } */
+        a:first-child{
+            color: yellow;
+            background-color: red;
+        }
+        a:nth-child(even){
+            color: cyan;
+            background-color: deeppink;
+        }
+
+        /* Pseudo Elements */
+        p::first-line{
+               color: red;
+        }
+        p::after{
+            content: "- Sourav";
+            color: greenyellow;
+        }
+        p::before{
+            content: "- Sourav";
+            color: greenyellow;
+        }
+        p::selection{
+            color: yellow;
+            background-color: pink;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>Pseudo Classes</h1>
+    <!-- Pseudo Classes -->
+    <p class="hover">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, aspernatur.</p>
+
+    <input type="text" name="" id=""><hr>
+
+    <nav>
+        <a href="https://google.com">Google</a>
+
+        
+    
+        <a href="https://google.com">Google</a>
+
+        
+        <a href="https://google.com">Google</a>
+
+        
+    
+        <a href="https://google.com">Google</a>
+    
+    </nav>
+
+    <hr>
+    <h1>Pseudo Element</h1>
+
+    <!-- Psuedo Element -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quaerat nisi aliquam, laborum ea distinctio similique accusamusdoloribus omnis a provident sapiente tempora culpa ducimus natus id, soluta optio! Accusantium natus assumenda aperiam illum labore eveniet porro! Maxime obcaecati ab fugit, Sourav  magnam ad non est possimus, a enim voluptates ea!</p>
+
+    
+    
+</body>
+</html>

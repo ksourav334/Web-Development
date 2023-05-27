@@ -1,0 +1,14 @@
+.padding{
+    padding: 100px 2px;
+    padding-top: 100px;
+    padding-bottom: 200;
+    padding-left: 50;
+    padding-right: 40;
+    border: 2px  solid black;
+}
+
+.margin{
+    border: 2px solid red;
+    width: 500px;
+    margin: 100px; 
+}
