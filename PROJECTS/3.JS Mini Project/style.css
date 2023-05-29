@@ -1,7 +1,7 @@
 body {
-    background-color: rgb(255,215,255);
+    background-color: rgb(255, 215, 255);
     padding: 40px;
-    font-size: Arial,Helvetica,sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6rem;
 }
 
@@ -22,6 +22,7 @@ body {
 
 .icon {
     margin-right: 16px;
+    transition: transform 0.2s;
 }
 
 .icon.active {
@@ -30,12 +31,7 @@ body {
 
 .answer {
     color: #666;
-    /* Actually the below code is for making the answer collapse 
-    for this to make happen it is needed to make the answer box's height 0 so that it will get collapsed and then finally make the overflow as hidden so that the extra content will be hidden from general content */
     max-height: 0;
     overflow: hidden;
-}
-
-.answer.active {
-    max-height: fit-content;
+    transition: max-height 0.2s;
 }
