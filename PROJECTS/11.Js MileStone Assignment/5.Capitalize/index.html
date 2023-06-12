@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitalize</title>
+</head>
+<body>
+    <script>
+        function capitalizeName(name) {
+  return name[0].toLowerCase() === name[0] ? name[0].toUpperCase() + name.slice(1) : name;
+}
+
+// Example usage:
+var user_input = prompt("Enter your name:");
+var capitalized_name = capitalizeName(user_input);
+console.log(capitalized_name);
+
+    </script>
+</body>
+</html>
